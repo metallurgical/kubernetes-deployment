@@ -82,3 +82,17 @@ kubectl run laravel-app \
 * --restart=Never is used not to restart the app when it crashes.
 * --image=<your-username>/laravel-app and --port=80 are the name of the image and the port exposed on the container.
 ```
+
+In Kubernetes, an app deployed in the cluster is called a **Pod**. To check for Pod successfully created use following:
+
+```
+kubectl get pods
+```
+
+`minikube` also provide dashboard to visualize created pods, etc. Open dashboard:
+
+```
+minikube dashboard
+```
+
+This will open the dashboard and from there you can see vizualize information.
