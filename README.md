@@ -215,3 +215,11 @@ Minikube comes with the Nginx as Ingress controller, and you can enable it with:
 ```
 minikube addons enable ingress
 ```
+
+After that create ingress:
+
+```
+kubectl create -f k8s/ingress.yaml
+```
+
+Once success, now you can access the application through cluster IP (ingress address). This will automatically route traffic to available pods. 
